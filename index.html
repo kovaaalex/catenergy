@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=Ё, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="style.css">
     <title>Cat energy</title>
 </head>
 <body>
@@ -73,6 +73,16 @@
                 <img src="./assets/images/weight/cat_back2.svg" alt="cat" class="adaptive__img">
             </div>
         </div>
+        <div class="map__wrapper">
+            <div class="map__address">
+                <h3>приглашаем к сотрудничеству дилеров!</h3>
+                <div class="map__description">
+                    <p>ул. Большая Конюшенная, д. 19/8</p>
+                    <p>Санкт-Петербург</p>
+                </div>
+            </div>
+            <div id="map"></div>
+        </div>
     </main>
     <footer>
         <img src="./assets/images/logo/catEnergyLogo.svg" alt="catEnergyLogo" class="catEnergyLogo">
@@ -88,5 +98,7 @@
             <img src="./assets/images/logo/htmlacademyLogo.svg" alt="htmlacademy">
         </div>
     </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=629ec311-d9fd-4932-adbe-6ffcf3463abd&lang=ru_RU"></script>
+    <script src='./script.js'></script>
 </body>
 </html>
