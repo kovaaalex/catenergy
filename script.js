@@ -16,3 +16,13 @@ ymaps.ready(function() {
           
         myMap.geoObjects.add(myPlacemark);
 });
+
+const slider = document.getElementById('comparisonSlider');
+const overlay = document.getElementById('comparisonOverlay');
+
+slider.addEventListener('input', (e) => {
+    const v = e.target.value;
+    overlay.style.width = `${v}%`;
+});
+
+overlay.style.width = `${slider.value}%`;
